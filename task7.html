@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #text {
+      display: block;
+      font-size: 16px; /* Initial font size */
+    }
+  </style>
+  <title>Font Size Control Example</title>
+</head>
+<body>
+
+<input id="font-size-control" type="range" min="16" max="96" />
+<br />
+<span id="text">Abracadabra!</span>
+
+<script src="/task07.js"></script>
+<script>
+  // Get the input and span elements
+  var fontSizeControl = document.getElementById('font-size-control');
+  var textElement = document.getElementById('text');
+
+  // Add input event listener to the font-size control input
+  fontSizeControl.addEventListener('input', function() {
+    // Get the current value of the font-size control
+    var fontSizeValue = fontSizeControl.value;
+
+    // Update the font-size of the text element
+    textElement.style.fontSize = fontSizeValue + 'px';
+  });
+</script>
+
+</body>
+</html>
