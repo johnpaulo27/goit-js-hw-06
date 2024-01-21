@@ -4,8 +4,8 @@ This repository contains all of the source code used in the course called Javasc
 
 # Assignments :
 
-* Task 1 <a href="https://johnpaulo27.github.io/goit-js-hw-06-task01/"> (https://johnpaulo27.github.io/goit-js-hw-06-task01/) </a>
-* Task 2 <a href="https://johnpaulo27.github.io/goit-js-hw-06-task02/"> (https://johnpaulo27.github.io/goit-js-hw-06-task02/) </a>
+* [Task 1] 
+* [Task 2]
 * [Task 3]
 * [Task 4]
 * [Task 5]
