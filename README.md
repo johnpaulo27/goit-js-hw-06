@@ -4,7 +4,7 @@ This repository contains all of the source code used in the course called Javasc
 
 # Assignments :
 
-* Task 1
+* Task 1 (https://johnpaulo27.github.io/goit-js-hw-06-task01/)
 * Task 2
 * Task 3
 * Task 4
@@ -14,11 +14,3 @@ This repository contains all of the source code used in the course called Javasc
 * Task 8
 * Task 9
 * Task 10
-
-
-# Outputs :
-
-* [Task1](https://siddartha19.github.io/Coursera-HTML-CSS-and-JavaScript-for-Web-Developers/Assignments/module-2/index.html)
-* [Module-3](https://siddartha19.github.io/Coursera-HTML-CSS-and-JavaScript-for-Web-Developers/Assignments/module-3/index.html)
-* [Module-4](https://siddartha19.github.io/Coursera-HTML-CSS-and-JavaScript-for-Web-Developers/Assignments/module-4/index.html)
-* [Module-5](https://siddartha19.github.io/Coursera-HTML-CSS-and-JavaScript-for-Web-Developers/Assignments/module-5/index.html)
