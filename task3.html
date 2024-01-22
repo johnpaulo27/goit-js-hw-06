@@ -1,78 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>goit-js-hw-06</title>
-  <meta name="goit-js-hw-06" content="JavaScript"/>
-  <meta charset="utf-8"   />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-  /* Reset some default styles for the list */
-    body, ul {
-      margin: 0;
-      padding: 0;
-    }
-    
-    /* Center the gallery horizontally */
+    /* Add some basic styling using flexbox */
     .gallery {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       list-style: none;
+      padding: 0;
     }
-    
-    /* Style each gallery item */
+
     .gallery-item {
-      margin: 10px; /* Adjust margin as needed */
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      margin: 10px;
     }
-    
-    /* Style the gallery images */
-    .gallery-image {
-      width: 100%; /* Make images fill the container */
-      height: auto; /* Maintain aspect ratio */
-      display: block; /* Remove default inline styles */
-    }</style>
+  </style>
 </head>
 <body>
-    <!-- main section -->
-    <ul class="gallery"></ul>
-    <script src="/task03.js"></script>
-    <script>
-      // Array of image data
-const images = [
-    {
-      url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-      alt: "White and Black Long Fur Cat",
-    },
-    {
-      url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-      alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-    },
-    {
-      url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-      alt: "Group of Horses Running",
-    },
-  ];
-  
-  // Get the ul.gallery element
-  var galleryList = document.querySelector('.gallery');
-  
-  // Create an array to store the gallery items markup
-  var galleryItemsMarkup = [];
-  
-  // Loop through each image in the array
-  images.forEach(function(image) {
-    // Create markup for each image using template strings
-    var imageMarkup = `
+
+  <ul class="gallery"></ul>
+
+  <script>
+    const images = [
+      {
+        url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+        alt: "White and Black Long Fur Cat",
+      },
+      {
+        url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+        alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+      },
+      {
+        url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+        alt: "Group of Horses Running",
+      },
+    ];
+
+    // Get the gallery container
+    const galleryContainer = document.querySelector('.gallery');
+
+    // Create HTML markup for each image and insert into the gallery container
+    const galleryMarkup = images.map(image => `
       <li class="gallery-item">
-        <img src="${image.url}" alt="${image.alt}" class="gallery-image">
+        <img src="${image.url}" alt="${image.alt}">
       </li>
-    `;
-  
-    // Push the markup to the array
-    galleryItemsMarkup.push(imageMarkup);
-  });
-  
-  // Insert all gallery items into the ul.gallery in a single operation
-  galleryList.insertAdjacentHTML('beforeend', galleryItemsMarkup.join(''));
-    </script>
+    `).join('');
+
+    galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
+  </script>
 </body>
 </html>
